@@ -1,0 +1,44 @@
+<?xml  version = "1.0"  encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+<html xmlns= "http://www.w3.org/1999/xhtml" >
+	<head>
+		<title> Άσκηση 4: Κατάλογος Προϊόντων </title>
+		<style type = "text/css">
+			#tableCatalog {border: 3px solid grey;}
+			#tableAddProduct {border: 2px solid black;}
+			#tableEditProduct {border: 2px solid green;}
+			#showNumberOfProducts {float: left; height: 26px;}
+			#addProductButton {float: right; width: 683px}
+			#editSpace {clear: left; height: 250px;}
+		</style>
+		<script type="text/javascript" src="product_edit.js"> </script>
+	</head>
+	<body onload="changeXML()">
+		<h3> Κατάλογος Προϊόντων </h3>
+		<div id="catalog">
+			<table id="tableCatalog" border="1">
+				<tr id="ColumnsNames" bgcolor="#F2F2F9"> 
+					<td width="150" align="center"> <label> Product Photo </label> </td>
+					<td width="300" align="center"> <label> Description </label> </td>
+					<td width="100" align="center"> <label> Cost/pair </label> </td>
+					<td width="100" align="center"> <label> Actions </label> </td>
+				</tr>
+				<tr id="adidas_shoes.jpg">
+					<td> <img src="products/adidas_shoes.jpg" width="150" height="150"/> </td>
+					<td align="left" valign="top" width="300"> An awesome adidas shoe at an excellent price! </td>
+					<td width="100" align="center"> 50 &euro; </td>
+					<td align="center"> 
+						<input type="image" src="images/edit-icon.png" width="50" height="50" id="edit_adidas_shoes.jpg" onclick="editProductSpace(this.id)"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="showNumberOfProducts">Showing <b> 1 </b> product(s) </div>
+		<div id="addProductButton"> 
+			<input type="button" value="Add product" onclick="addProductSpace()"/>
+		</div>
+		<div id="editSpace">	
+		</div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<?xml  version = "1.0"  encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+<html xmlns= "http://www.w3.org/1999/xhtml" >
+	<head>
+		<title> Άσκηση 2: Drag & Drop </title>
+		<style type="text/css">
+			#left { float: left; width: 600px; height: 230px; border:1px solid black}
+			#right { float: right; width: 630px; }
+		</style>
+		<script type="text/javascript" src="drag_drop.js"></script>
+	</head>
+	<body>
+		<h2> Καλάθι αγορών </h2>
+		<p> Σύρατε <b>(Drag)</b> τα προϊόντα που επιθυμείτε να αγοράσετε στο Καλάθι Αγορών: </p>
+		<div id="photos">
+			<img src="images/adidas_shoes.jpg" width="150" height="150" id="adidas" style="cursor:pointer" draggable="true" ondragstart="drag(event)"/>
+			<img src="images/puma_shoes.jpg" width="150" height="150" id="puma" style="cursor:pointer" draggable="true" ondragstart="drag(event)"/>
+			<img src="images/NB_shoes.jpg" width="150" height="150" id="nb" style="cursor:pointer" draggable="true" ondragstart="drag(event)"/>
+			<img src="images/asics_shoes.jpg" width="150" height="150" id="asics" style="cursor:pointer" draggable="true" ondragstart="drag(event)"/>
+		</div>
+		<h3> Το Καλάθι αγορών σας: </h3>
+		<div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+			
+		</div>
+		<div id="right">
+			<div id="trash_cancel">
+				Αφήστε <b>(Drop)</b> εδώ τα </br> προιόντα για τα οποία </br> θέλετε να ακυρώσετε </br>την παραγγελία:
+			</div>
+			<img src="images/smiling_trash_can.jpg" width="150" height="150" id="trash_can" ondrop="dropInTrash(event)" ondragover="allowDrop(event)"/>
+		</div>
+		<button type="button" onclick="clean()">Άδεισμα καλαθιού</button></th>
+   </body>
+</html>

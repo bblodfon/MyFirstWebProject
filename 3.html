@@ -1,0 +1,81 @@
+<?xml  version = "1.0"  encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+<html xmlns= "http://www.w3.org/1999/xhtml" >
+	<head>
+		<title> Άσκηση 3: Google Maps </title>
+		<style type = "text/css">
+			#forma { float: left; background-color: #F2F2F9; width: 350px }
+			#map { float: right; width: 880px }
+		</style>
+		<script type="text/javascript" src="checking_form.js"> </script>
+	</head>
+	<body>
+	<div id="forma">
+		<form method="GET" name="myForm">
+		<table>
+			<tr> 
+				<td> <label> Όνομα: </label> </td>
+				<td> <input type="text" id="myName" onblur="checkName(this.id)"/> </td>
+			</tr>
+			<tr> 
+				<td> <label> Επώνυμο: </label> </td>
+				<td> <input type="text" id="mySurname" onblur="checkName(this.id)"/>  </td>
+			</tr>
+			<tr>
+				<td> <label> Διεύθυνση: </label> </td> 
+				<td> <input type="text" id="myAddress" onblur="checkAddress(this.id)"/> </td>
+			</tr>
+			<tr>
+				<td> <label> Πόλη: </label> </td> 
+				<td> <input type="text" id="myTown" onblur="checkName(this.id)"/> </td>
+			</tr>
+			<tr>
+				<td> <label> Ταχ. κώδικας: </label> </td>
+				<td> <input type="text" id="myPostalCode" maxlength="5" size="5" onblur="checkPostalCode()"/> </td>
+			</tr>
+			<tr>
+				<td> <label> Τηλέφωνο: </label> </td>
+				<td> ( 	<input type="text" id="CC" maxlength="3" size="3" onblur="checkCc(this.id)"/> ) 
+						<input type="text" id="CN" maxlength="3" size="3" onblur="checkCn(this.id)"/> -
+						<input type="text" id="myPhone" maxlength="7" size="7" onblur="checkPhone(this.id)"/> 
+				</td>
+			</tr>
+			<tr>
+				<td> <label> 2ο Τηλέφωνο: </label> </td>
+				<td> <input type="text" id="mySecPhone" maxlength="10" size="10" onblur="checkGeneralPhone(this.id)"/> </td>
+			</tr>
+			<tr>
+				<td> <label> Είδος: </label> </td>
+				<td> <select id = "myItem">
+						<option>Τούρτα </option>
+						<option>Λουλούδια </option>
+						<option>Βιβλίο </option>
+						<option>CD Μουσικής </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> <label> Ώρα παράδοσης: </label> </td>
+				<td> <select id = "myTime">
+						<option>Πρωΐ (8:00-12:29) </option>
+						<option>Μεσημέρι (12:30-15:00) </option>
+						<option>Οποιαδήποτε ώρα! </option>
+						<option>Δεν θα βρίσκομαι σπίτι! </option>
+						<option>Τηλεφωνείστε μου για ραντεβού </option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<p> <label> Παρατηρήσεις: </label> </br>
+		<textarea rows="5" cols="38"></textarea>
+		</p>
+		<input type="button" name="submit" value="Υποβολή" onclick="validateAndMapDisplay()"/>
+		<input type="reset" name="reset" value="Ακύρωση" onclick="clearMap()"/>
+		</form>
+	</div>
+	<div id="map">
+		
+	</div>
+    </body>
+</html>
