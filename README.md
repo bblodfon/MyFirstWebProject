@@ -1,5 +1,5 @@
 # MyFirstWebProject
-Learning to use HTML, CSS, JavaScript, AJAX, PHP and Google APIs in one project!
+Learning how to use HTML, CSS, JavaScript, AJAX, PHP and Google APIs, all in one project!
 
 In order to run all the examples, have an apache-php+AJAX enabled server with the proper
 permissions for the files (products.xml needs write permissions). Launch apache or XAMPP,
