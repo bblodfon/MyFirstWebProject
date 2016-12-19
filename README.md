@@ -1,8 +1,5 @@
 # MyFirstWebProject
-Learning how to use HTML, CSS, JavaScript, AJAX, PHP and Google APIs, all in one project!
-
-In order to run all the examples, have an apache-php+AJAX enabled server with the proper
-permissions for the files (products.xml needs write permissions). Launch apache or XAMPP,
-unzip the 1st_Web_assignment.zip file in C:\xampp\htdocs (XAMPP) or in /var/www (Apache in Linux)
-and run on a Browser: localhost/1st_Web_assignment/1st_Web_assignment.html.
-Navigate through the exercises and have fun!
+Learning how to use HTML, CSS, JavaScript, AJAX, PHP and Google APIs, all in one project! Some notes:
+- In order to run all the examples, have an apache-php+AJAX enabled server with the proper
+permissions for the files (products.xml needs write permissions for the exercise No4).
+- Click [here](http://bblodfon.github.io/MyFirstWebProject/1st_Web_assignment.html) to see the project/exercises online - note that exercise No 4 needs a server-side working also, which the github hosting does not provide.
